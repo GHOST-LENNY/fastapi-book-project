@@ -1,11 +1,10 @@
-name: CI Pipeline
+name: CI Test Pipeline
 on:
   pull_request:
     branches: [main]
 
 jobs:
   test:
-    name: Run Tests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
